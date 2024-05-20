@@ -801,7 +801,7 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (45, 'Kaliningrad Stadium', 'England','false',0,0,NULL,NULL,0,1,'Belgium',3, 7);
 INSERT INTO public.plays VALUES(45, 'England', 'Belgium');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (116,false, false, 51, NULL, 73, 45);
+    (117,false, false, 51, NULL, 73, 45);
 
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
@@ -809,11 +809,11 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (46, 'Mordovia Stadium', 'Panama','false',1,0,NULL,NULL,1,2,'Tunisia',3, 7);
 INSERT INTO public.plays VALUES(46, 'Panama', 'Tunisia');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (117,false, true, 33, NULL, 93, 46);
+    (118,false, true, 33, NULL, 93, 46);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (118,false, false, 51, NULL, 74, 46);
+    (119,false, false, 51, NULL, 74, 46);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (119,false, false, 66, NULL, 68, 46);
+    (120,false, false, 66, NULL, 68, 46);
 
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
@@ -821,7 +821,7 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (47, 'Volgograd Arena', 'Japan','false',0,1,NULL,NULL,0,1,'Poland',3, 8);
 INSERT INTO public.plays VALUES(47, 'Japan', 'Poland');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (120,false, false, 59, NULL, 87, 47);
+    (121,false, false, 59, NULL, 87, 47);
 
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
@@ -829,7 +829,7 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (48, 'Samara Arena', 'Senegal','false',0,1,NULL,NULL,0,1,'Colombia',3, 8);
 INSERT INTO public.plays VALUES(48, 'Senegal', 'Colombia');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (121,false, false, 74, NULL, 84, 48);
+    (122,false, false, 74, NULL, 84, 48);
 
 -- ROUND OF 16
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
@@ -838,11 +838,11 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (49, 'Fisht Stadium', 'Uruguay','true',1,0,NULL,NULL,2,1,'Uruguay',4, NULL);
 INSERT INTO public.plays VALUES(49, 'Uruguay', 'Portugal');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (122,false, false, 7, NULL, 8, 49);
+    (123,false, false, 7, NULL, 8, 49);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (123,false, false, 62, NULL, 8, 49);
+    (124,false, false, 62, NULL, 8, 49);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (124,false, false, 55, NULL, 95, 49);
+    (125,false, false, 55, NULL, 95, 49);
 
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
@@ -850,19 +850,19 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (50, 'Kazan Arena', 'France','true',1,1,NULL,NULL,4,3,'France',4, NULL);
 INSERT INTO public.plays VALUES(50, 'France', 'Argentina');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (125,true, false, 13, NULL, 21, 50);
+    (126,true, false, 13, NULL, 21, 50);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (126,false, false, 57, NULL, 96, 50);
+    (127,false, false, 57, NULL, 96, 50);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (127,false, false, 64, NULL, 26, 50);
+    (128,false, false, 64, NULL, 26, 50);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (128,false, false, 68, NULL, 26, 50);
+    (129,false, false, 68, NULL, 26, 50);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (129,false, false, 41, NULL, 97, 50);
+    (130,false, false, 41, NULL, 97, 50);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (130,false, false, 48, NULL, 98, 50);
+    (131,false, false, 48, NULL, 98, 50);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (131,false, false, 90, 3, 29, 50);
+    (132,false, false, 90, 3, 29, 50);
 
 
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
@@ -870,9 +870,9 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (51, 'Luzhniki Stadium', 'Spain','true',1,1,1,1,1,1,'Russia',4, NULL);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (132,false, true, 12, NULL, 99, 51);
+    (133,false, true, 12, NULL, 99, 51);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (133,false, true, 41, NULL, 3, 51);
+    (134,false, true, 41, NULL, 3, 51);
 
 INSERT INTO public.plays VALUES(51, 'Spain', 'Russia');
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
@@ -881,9 +881,9 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (52, 'Nizhny Novgorod Stadium', 'Croatia','true',1,1,1,1,1,1,'Croatia',4, NULL);
 INSERT INTO public.plays VALUES(52, 'Croatia', 'Denmark');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (134,false, false, 4, NULL, 122, 52);
+    (135,false, false, 4, NULL, 122, 52);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (135,false, false, 1, NULL, 100, 52);
+    (136,false, false, 1, NULL, 100, 52);
 
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
@@ -891,9 +891,9 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (53, 'Samara Arena', 'Brazil','true',0,0,NULL,NULL,2,0,'Brazil',4, NULL);
 INSERT INTO public.plays VALUES(53, 'Brazil', 'Mexico');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (135,false, false, 51, NULL, 43, 53);
+    (137,false, false, 51, NULL, 43, 53);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (136,false, false, 88, NULL, 101, 53);
+    (138,false, false, 88, NULL, 101, 53);
 
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
@@ -901,15 +901,15 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (54, 'Rostov Arena', 'Belgium','true',0,0,NULL,NULL,3,2,'Belgium',4, NULL);
 INSERT INTO public.plays VALUES(54, 'Belgium', 'Japan');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (137,false, false, 69, NULL, 102, 54);
+    (139,false, false, 69, NULL, 102, 54);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (138,false, false, 74, NULL, 103, 54);
+    (140,false, false, 74, NULL, 103, 54);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (139,false, false, 90, 4, 104, 54);
+    (141,false, false, 90, 4, 104, 54);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (140,false, false, 48, NULL, 105, 54);
+    (142,false, false, 48, NULL, 105, 54);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (141,false, false, 52, NULL, 80, 54);
+    (143,false, false, 52, NULL, 80, 54);
 
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
@@ -917,7 +917,7 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (55, 'Saint Petersburg Stadium', 'Sweden','true',0,0,NULL,NULL,1,0,'Sweden',4, NULL);
 INSERT INTO public.plays VALUES(55, 'Sweden', 'Switzerland');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (142,false, false, 66, NULL, 107, 55);
+    (144,false, false, 66, NULL, 107, 55);
 
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
@@ -925,9 +925,9 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (56, 'Spartak Stadium', 'Colombia','true',0,0,1,1,1,1,'England',4, NULL);
 INSERT INTO public.plays VALUES(56, 'Colombia', 'England');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (143,false, false, 90, 3, 84, 56);
+    (145,false, false, 90, 3, 84, 56);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (144,true, false, 57, NULL, 70, 56);
+    (146,true, false, 57, NULL, 70, 56);
 
 -- ROUND OF QUATERFINALS
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
@@ -936,9 +936,9 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (57, 'Nizhny Novgorod Stadium', 'Uruguay','true',0,1,NULL,NULL,0,2,'France',5, NULL);
 INSERT INTO public.plays VALUES(57, 'Uruguay', 'France');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (145,false, false, 40, NULL, 108, 57);
+    (147,false, false, 40, NULL, 108, 57);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (146,false, false, 61, NULL, 21, 57);
+    (148,false, false, 61, NULL, 21, 57);
 
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
@@ -946,11 +946,11 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (58, 'Kazan Arena', 'Brazil','true',0,2,NULL,NULL,1,2,'Belgium',5, NULL);
 INSERT INTO public.plays VALUES(58, 'Brazil', 'Belgium');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (147,false, false, 76, NULL, 109, 58);
+    (149,false, false, 76, NULL, 109, 58);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (148,false, true, 13, NULL, 110, 58);
+    (150,false, true, 13, NULL, 110, 58);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (149,false, false, 31, NULL, 111, 58);
+    (151,false, false, 31, NULL, 111, 58);
 
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
@@ -958,13 +958,13 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (59, 'Fisht Stadium', 'Russia','true',0,0,2,2,1,1,'Croatia',5, NULL);
 INSERT INTO public.plays VALUES(59, 'Russia', 'Croatia');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (150,false, false, 31, NULL, 2, 59);
+    (152,false, false, 31, NULL, 2, 59);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (151,false, false, 115, NULL, 117, 59);
+    (153,false, false, 115, NULL, 117, 59);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (152,false, false, 39, NULL, 112, 59);
+    (154,false, false, 39, NULL, 112, 59);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (153,false, false, 100, NULL, 113, 59);
+    (155,false, false, 100, NULL, 113, 59);
 
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
@@ -972,9 +972,9 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (60, 'Samara Arena', 'Sweden','true',0,1,NULL,NULL,0,2,'England',5, NULL);
 INSERT INTO public.plays VALUES(60, 'Sweden', 'England');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (154,false, false, 30, NULL, 114, 60);
+    (156,false, false, 30, NULL, 114, 60);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (155,false, false, 58, NULL, 115, 60);
+    (157,false, false, 58, NULL, 115, 60);
 
 
 -- ROUND OF SEMIFINALS
@@ -984,7 +984,7 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (61, 'Saint Petersburg Stadium', 'France','true',0,0,NULL,NULL,1,0,'France',6, NULL);
 INSERT INTO public.plays VALUES(61, 'France', 'Belgium');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (156,false, false, 51, NULL, 118, 61);
+    (158,false, false, 51, NULL, 118, 61);
 
 
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
@@ -993,11 +993,11 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (62, 'Luzhniki Stadium', 'Croatia','true',0,1,2,1,1,1,'Croatia',6, NULL);
 INSERT INTO public.plays VALUES(62, 'Croatia', 'England');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (157,false, false, 68, NULL, 40, 62);
+    (159,false, false, 68, NULL, 40, 62);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (158,false, false, 109, NULL, 122, 62);
+    (160,false, false, 109, NULL, 122, 62);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (159,false, false, 5, NULL, 119, 62);
+    (161,false, false, 5, NULL, 119, 62);
 
 -- ROUND OF THIRD PLACE
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
@@ -1006,9 +1006,9 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (63, 'Saint Petersburg Stadium', 'Belgium','true',1,0,NULL,NULL,2,0,'Belgium',7, NULL);
 INSERT INTO public.plays VALUES(63, 'Belgium', 'England');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (160,false, false, 4, NULL, 120, 63);
+    (162,false, false, 4, NULL, 120, 63);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (161,false, false, 82, NULL, 65, 63);
+    (163,false, false, 82, NULL, 65, 63);
 
 -- ROUND OF FINAL
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
@@ -1017,17 +1017,17 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     (64, 'Luzhniki Stadium', 'France','true',2,1,NULL,NULL,4,2,'France',8, NULL);
 INSERT INTO public.plays VALUES(64, 'France', 'Croatia');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (162,false, true, 18, NULL, 122, 64);
+    (164,false, true, 18, NULL, 122, 64);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (163,true, false, 38, NULL, 21, 64);
+    (165,true, false, 38, NULL, 21, 64);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (164,false, false, 59, NULL, 121, 64);
+    (166,false, false, 59, NULL, 121, 64);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (165,false, false, 65, NULL, 26, 64);
+    (167,false, false, 65, NULL, 26, 64);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (166,false, false, 28, NULL, 40, 64);
+    (168,false, false, 28, NULL, 40, 64);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
-    (167,false, false, 69, NULL, 122, 64);
+    (169,false, false, 69, NULL, 122, 64);
 
 
     
