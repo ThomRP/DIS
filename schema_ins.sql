@@ -292,13 +292,12 @@ INSERT INTO public.Players (player_id, player_name, team_name) VALUES (121, 'Pau
 INSERT INTO public.Players (player_id, player_name, team_name) VALUES (122, 'Mario Mandžukić', 'Croatia');
 
 -- Russia worldcup matches
--- MATCHDAY 1
+-- ROUND 1
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (1, 'Luzhniki Stadium', 'Russia','false',2,0,NULL,NULL,5,0, 'Russia',1, 1);
 INSERT INTO public.plays VALUES(1, 'Russia', 'Saudi Arabia');
--- MATCHDAY 2
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
@@ -314,7 +313,6 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (4, 'Fisht Stadium', 'Portugal','false',2,1,NULL,NULL,3,3, NULL,1, 2);
 INSERT INTO public.plays VALUES(4, 'Portugal', 'Spain');
--- MATCHDAY 3
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
@@ -335,7 +333,6 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (8, 'Kalinigrad Stadium', 'Croatia','false',1,0,NULL,NULL,2,0, 'Croatia',1, 4);
 INSERT INTO public.plays VALUES(8, 'Croatia', 'Nigeria');
--- MATCHDAY 4
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
@@ -351,7 +348,6 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (11, 'Luzhniki Stadium', 'Germany','false',0,1,NULL,NULL,0,1, 'Mexico',1, 6);
 INSERT INTO public.plays VALUES(11, 'Germany', 'Mexico');
--- MATCHDAY 5
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
@@ -367,12 +363,6 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (14, 'Volgograd Arena', 'Tunisia','false',1,1,NULL,NULL,1,2, 'England',1, 7);
 INSERT INTO public.plays VALUES(14, 'Tunisia', 'England');
--- MATCHDAY 6
-INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
-    away_score_pause,home_score_et,away_score_et,
-    home_score,away_score,winner_name,round_id,group_id) VALUES 
-    (15, 'Saint Petersburg Stadium', 'Russia','false',0,0,NULL,NULL,3,1, 'Russia',2, 1);
-INSERT INTO public.plays VALUES(15, 'Russia', 'Egypt');
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
@@ -383,7 +373,12 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (17, 'Spartak Stadium', 'Poland','false',0,1,NULL,NULL,1,2, 'Senegal',1, 8);
 INSERT INTO public.plays VALUES(17, 'Poland', 'Senegal');
--- MATCHDAY 7
+-- ROUND 2
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (15, 'Saint Petersburg Stadium', 'Russia','false',0,0,NULL,NULL,3,1, 'Russia',2, 1);
+INSERT INTO public.plays VALUES(15, 'Russia', 'Egypt');
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
@@ -399,7 +394,6 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (20, 'Kazan Arena', 'Iran','false',0,0,NULL,NULL,0,1, 'Spain',2, 2);
 INSERT INTO public.plays VALUES(20, 'Iran', 'Spain');
--- MATCHDAY 8
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
@@ -415,7 +409,6 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (23, 'Nizhny Novgorod Stadium', 'Argentina','false',0,0,NULL,NULL,0,3,'Croatia',2, 4);
 INSERT INTO public.plays VALUES(23, 'Argentina', 'Croatia');
--- MATCHDAY 9
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
@@ -431,7 +424,6 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (26, 'Kaliningrad Stadium', 'Serbia','false',1,0,NULL,NULL,1,2,'Switzerland',2, 5);
 INSERT INTO public.plays VALUES(26, 'Serbia', 'Switzerland');
--- MATCHDAY 10
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
@@ -447,7 +439,6 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (29, 'Spartak Stadium', 'Belgium','false',3,1,NULL,NULL,5,2,'Belgium',2, 7);
 INSERT INTO public.plays VALUES(4, 'Belgium', 'Tunisia');
--- MATCHDAY 11
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
@@ -463,7 +454,7 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (32, 'Kazan Arena', 'Poland','false',0,1,NULL,NULL,0,3,'Colombia',2, 8);
 INSERT INTO public.plays VALUES(32, 'Poland', 'Colombia');
--- MATCHDAY 12
+-- ROUND 3
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
@@ -484,7 +475,6 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (36, 'Kaliningrad Stadium', 'Spain','false',1,1,NULL,NULL,2,2,NULL,3, 2);
 INSERT INTO public.plays VALUES(36, 'Morocco', 'Spain');
--- MATCHDAY 13
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
@@ -505,7 +495,6 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (40, 'Rostov Arena', 'Iceland','false',0,0,NULL,NULL,1,2,'Croatia',3, 4);
 INSERT INTO public.plays VALUES(40, 'Iceland', 'Croatia');
--- MATCHDAY 14
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
@@ -526,7 +515,6 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (44, 'Ekaterinburg Arena', 'Mexico','false',0,0,NULL,NULL,0,3,'Sweden',3, 6);
 INSERT INTO public.plays VALUES(44, 'Mexico', 'Sweden');
--- MATCHDAY 14
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
@@ -547,7 +535,91 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (48, 'Samara Arena', 'Senegal','false',0,1,NULL,NULL,0,1,'Colombia',3, 8);
 INSERT INTO public.plays VALUES(48, 'Senegal', 'Colombia');
-
+-- ROUND OF 16
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (49, 'Fisht Stadium', 'Uruguay','true',1,0,NULL,NULL,2,1,'Uruguay',4, NULL);
+INSERT INTO public.plays VALUES(49, 'Uruguay', 'Portugal');
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (50, 'Kazan Arena', 'France','true',1,1,NULL,NULL,4,3,'France',4, NULL);
+INSERT INTO public.plays VALUES(50, 'France', 'Argentina');
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (51, 'Luzhniki Stadium', 'Spain','true',1,1,1,1,1,1,'Russia',4, NULL);
+INSERT INTO public.plays VALUES(51, 'Spain', 'Russia');
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (52, 'Nizhny Novgorod Stadium', 'Croatia','true',1,1,1,1,1,1,'Croatia',4, NULL);
+INSERT INTO public.plays VALUES(52, 'Croatia', 'Denmark');
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (53, 'Samara Arena', 'Brazil','true',0,0,NULL,NULL,2,0,'Brazil',4, NULL);
+INSERT INTO public.plays VALUES(53, 'Brazil', 'Mexico');
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (54, 'Rostov Arena', 'Belgium','true',0,0,NULL,NULL,3,2,'Belgium',4, NULL);
+INSERT INTO public.plays VALUES(54, 'Belgium', 'Japan');
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (55, 'Saint Petersburg Stadium', 'Sweden','true',0,0,NULL,NULL,1,0,'Sweden',4, NULL);
+INSERT INTO public.plays VALUES(55, 'Sweden', 'Switzerland');
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (56, 'Spartak Stadium', 'Colombia','true',0,0,1,1,1,1,'England',4, NULL);
+INSERT INTO public.plays VALUES(56, 'Colombia', 'England');
+-- ROUND OF QUATERFINALS
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (57, 'Nizhny Novgorod Stadium', 'Uruguay','true',0,1,NULL,NULL,0,2,'France',5, NULL);
+INSERT INTO public.plays VALUES(57, 'Uruguay', 'France');
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (58, 'Kazan Arena', 'Brazil','true',0,2,NULL,NULL,1,2,'Belgium',5, NULL);
+INSERT INTO public.plays VALUES(58, 'Brazil', 'Belgium');
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (59, 'Fisht Stadium', 'Russia','true',0,0,1,1,1,1,'Croatia',5, NULL);
+INSERT INTO public.plays VALUES(59, 'Russia', 'Croatia');
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (60, 'Samara Arena', 'Sweden','true',0,1,NULL,NULL,0,2,'England',5, NULL);
+INSERT INTO public.plays VALUES(60, 'Sweden', 'England');
+-- ROUND OF SEMIFINALS
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (61, 'Saint Petersburg Stadium', 'France','true',0,0,NULL,NULL,1,0,'France',6, NULL);
+INSERT INTO public.plays VALUES(61, 'France', 'Belgium');
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (62, 'Luzhniki Stadium', 'Croatia','true',0,1,2,1,1,1,'Croatia',6, NULL);
+INSERT INTO public.plays VALUES(62, 'Croatia', 'England');
+-- ROUND OF THIRD PLACE
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (63, 'Saint Petersburg Stadium', 'Belgium','true',1,0,NULL,NULL,2,0,'Belgium',7, NULL);
+INSERT INTO public.plays VALUES(63, 'Belgium', 'England');
+-- ROUND OF FINAL
+INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
+    away_score_pause,home_score_et,away_score_et,
+    home_score,away_score,winner_name,round_id,group_id) VALUES 
+    (64, 'Luzhniki Stadium', 'France','true',2,1,NULL,NULL,4,2,'France',8, NULL);
+INSERT INTO public.plays VALUES(64, 'France', 'Croatia');
 
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
     (1,false, false, 12, NULL, 1, 1);
