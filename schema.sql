@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS Teams(
 CREATE TABLE IF NOT EXISTS Matches(
 	match_id integer PRIMARY KEY,
     stadium varchar(60),
-    hometeam_name integer,
+    hometeam_name varchar(60),
     knockout boolean default False,
     home_score_pause integer,
     away_score_pause integer,
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS Matches(
     away_score_et integer,
     home_score integer,
     away_score integer,
-    winner_id integer,
+    winner_name varchar(60),
     round_id integer NOT NULL,
     group_id integer,
     FOREIGN KEY (round_id) REFERENCES Rounds
@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS Matches(
 CREATE TABLE IF NOT EXISTS Players(
 	player_id integer PRIMARY KEY,
   player_name varchar(60),
-  team_name integer NOT NULL,
+  team_name varchar(60) NOT NULL,
   FOREIGN KEY (team_name) REFERENCES Teams
     ON DELETE NO ACTION
 );
@@ -69,8 +69,8 @@ CREATE TABLE IF NOT EXISTS Goals(
 
 CREATE TABLE IF NOT EXISTS plays(
 	match_id INTEGER NOT NULL REFERENCES Matches(match_id),
-    team_name1 INTEGER NOT NULL REFERENCES Teams(team_name),
-    team_name2 INTEGER NOT NULL REFERENCES Teams(team_name)
+    team_name1 varchar(60) NOT NULL REFERENCES Teams(team_name),
+    team_name2 varchar(60) NOT NULL REFERENCES Teams(team_name)
 );
 ALTER TABLE plays ADD CONSTRAINT pk_plays
   PRIMARY KEY (match_id, team_name1, team_name2)
