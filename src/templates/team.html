@@ -1,0 +1,13 @@
+{% extends "navbar.html" %} {% block content %}
+<div class="contact">
+
+    {%for i in range(0,length)%}
+    <div class="player">
+        <div class="container">
+            <h4><b>Name. {{content[i][0]}}</b></h4>
+            <p class="card-text">Goals: {{content[i][1]}}</p>
+        </div>
+    </div>
+    {%endfor%}
+</div>
+{% endblock content %}
