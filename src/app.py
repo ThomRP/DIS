@@ -45,7 +45,7 @@ def teampage(teamname):
     cur.execute(sql1)
     ct = list(cur.fetchall())
     print()
-    return render_template("team.html", content=ct, length = len(ct))
+    return render_template("team.html", content=ct, length = len(ct), team = teamname)
 
 @app.route("/cup/<cup_id>/<search>")
 def cupquerypage(cup_id,search):
@@ -75,7 +75,7 @@ def cupquerypage(cup_id,search):
     # Flest spillede
     if search == "played":
         sqlcode += f'''
-                    SELECT team_name, cup_id, count(*) as played from
+                    SELECT team_name, count(*) as played, cup_id from
                     ((Select cup_id, team_name1 as team_name
                     from plays 
                     NATURAL JOIN Matches 
@@ -94,6 +94,7 @@ def cupquerypage(cup_id,search):
                     Group By team_name, cup_id
                     order by played desc;'''
         rest += 1
+        search = "Games Played"
 
     #  Flest trofæer:
     if rest == 0: 
@@ -118,7 +119,7 @@ def cupquerypage(cup_id,search):
     ct = list(cur.fetchall())
     length = len(ct)
 
-    return render_template("cupquery.html", content=ct, length=length)
+    return render_template("cupquery.html", content=ct, length=length, search = search[0].upper() + search[1:])
 
 
 if __name__ == "__main__":

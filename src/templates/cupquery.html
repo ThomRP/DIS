@@ -1,13 +1,13 @@
 {% extends "navbar.html" %} {% block content %}
-<h1>Crypto Punk Query!</h1>
+<h1>World Cup Query of {{search}}!</h1>
 <div class="cards">
     {%for i in range(0,length)%}
-    <a href="/team/{{content[i][0]}}">
+    <a href="/team/{{content[i][0]}}" class="no-underline">
         <div class="card">
             <div class="container">
-                <h4><b>Team. {{content[i][0]}}</b></h4>
-                <p class="card-text">Cup_id: {{content[i][1]}}</p>
-                <p class="card-text">Amount: {{content[i][2]}}</p>
+                <h4><b> {{content[i][0]}}</b></h4>
+                <p class="card-text">{{search}}: {{content[i][1]}}</p>
+                <p class="card-text">Cup_id: {{content[i][2]}}</p>
             </div>
         </div>
     </a>
