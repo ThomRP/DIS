@@ -1029,8 +1029,130 @@ INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id)
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
     (169,false, false, 69, NULL, 122, 64);
 
+--Qatar 2022
 
-    
+-- Group A
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (123, 'Enner Valencia', 'Ecuador');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (124, 'Cody Gakpo', 'Netherlands');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (125, 'Davy Klaassen', 'Netherlands');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (126, 'Mohammed Muntari', 'Qatar');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (127, 'Boulaye Dia', 'Senegal');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (128, 'Famara Diédhiou', 'Senegal');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (129, 'Bamba Dieng', 'Senegal');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (130, 'Moisés Caicedo', 'Ecuador');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (131, 'Ismaila Sarr', 'Senegal');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (132, 'Koulibaly', 'Senegal');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (133, 'Frenkie de Jong', 'Netherlands');
+
+-- Group B
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (134, 'Jude Bellingham', 'England');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (135, 'Bukayo Saka', 'England');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (136, 'Raheem Sterling', 'England');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (137, 'Marcus Rashford', 'England');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (138, 'Jack Grealish', 'England');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (139, 'Mehdi Taremi', 'Iran');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (140, 'Timothy Weah', 'United States');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (141, 'Gareth Bale', 'Wales');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (142, 'Roozbeh Cheshmi', 'Iran');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (143, 'Ramin Rezaeian', 'Iran');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (144, 'Phil Foden', 'England');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (145, 'Christian Pulisic', 'United States');
+
+-- Group C
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (147, 'Saleh Al Shehri', 'Saudi Arabia');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (149, 'Piotr Zielinski', 'Poland');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (150, 'Robert Lewandowski', 'Poland');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (151, 'Enzo Fernández', 'Argentina');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (152, 'Mac Allister', 'Argentina');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (153, 'Julián Álvarez', 'Argentina');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (154, 'Henry Martín', 'Mexico');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (155, 'Luis Chávez', 'Mexico');
+
+-- Group D
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (156, 'Adrien Rabiot', 'France');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (157, 'Olivier Giroud', 'France');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (159, 'Craig Goodwin', 'Australia');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (160, 'Mitchell Duke', 'Australia');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (161, 'Andreas Christensen', 'Denmark');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (162, 'Mathew Leckie', 'Australia');
+
+-- Group E
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (164, 'Ilkay Gündogan', 'Germany');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (165, 'Ritsu Doan', 'Japan');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (166, 'Takuma Asano', 'Japan');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (167, 'Dani Olmo', 'Spain');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (168, 'Marco Asensio', 'Spain');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (169, 'Ferran Torres', 'Spain');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (170, 'Gavi', 'Spain');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (171, 'Carlos Soler', 'Spain');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (172, 'Álvaro Morata', 'Spain');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (173, 'Keysher Fuller', 'Costa Rica');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (174, 'Niclas Füllkrug', 'Germany');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (175, 'Ao Tanaka', 'Japan');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (176, 'Yeltsin Tejeda', 'Costa Rica');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (177, 'Juan Vargas', 'Costa Rica');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (178, 'Serge Gnabry', 'Germany');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (179, 'Kai Lukas Havertz', 'Germany');
+
+-- Group F
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (181, 'Romain Saïss', 'Morocco');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (182, 'Zakaria Aboukhlal', 'Morocco');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (184, 'Marko Livaja', 'Croatia');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (185, 'Lovro Majer', 'Croatia');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (186, 'Alphonso Davies', 'Canada');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (187, 'Hakim Ziyech', 'Morocco');
+
+-- Group G
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (189, 'Breel Embolo', 'Switzerland');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (190, 'Richarlison', 'Brazil');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (191, 'Jean-Charles Castelletto', 'Cameroon');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (192, 'Vincent Aboubakar', 'Cameroon');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (193, 'Jean-Eric Choupo-Moting', 'Cameroon');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (194, 'Strahinja Pavlović', 'Serbia');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (195, 'Sergej Milinković-Savić', 'Serbia');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (197, 'Casemiro', 'Brazil');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (199, 'Freuler', 'Switzerland');
+
+-- Group H
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (201, 'João Félix', 'Portugal');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (202, 'Rafael Leão', 'Portugal');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (203, 'André Ayew', 'Ghana');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (204, 'Osman Bukari', 'Ghana');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (205, 'Mohammed Salisu', 'Ghana');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (206, 'Mohammed Kudus', 'Ghana');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (207, 'Bruno Fernandes', 'Portugal');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (208, 'Giorgian De Arrascaeta', 'Uruguay');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (210, 'Hwang Hee-chan', 'South Korea');
+
+-- Round of 16
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (211, 'Memphis Depay', 'Netherlands');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (212, 'Daley Blind', 'Netherlands');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (213, 'Denzel Dumfries', 'Netherlands');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (214, 'Haji Wright', 'United States');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (215, 'Jordan Henderson', 'England');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (217, 'Daizen Maeda', 'Japan');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (219, 'Vinícius Jr.', 'Brazil');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (221, 'Lucas Paquetá', 'Brazil');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (222, 'Paik Seung-ho', 'South Korea');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (223, 'Gonçalo Ramos', 'Portugal');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (225, 'Raphaël Guerreiro', 'Portugal');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (226, 'Manuel Akanji', 'Switzerland');
+
+-- Quarter-finals
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (227, 'Bruno Petković', 'Croatia');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (228, 'Wout Weghorst', 'Netherlands');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (229, 'Nahuel Molina', 'Argentina');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (230, 'Aurélien Tchouaméni', 'France');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (231, 'Théo Hernandez', 'France');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (232, 'Kolo Muani', 'France');
+
+-- Match for third place
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (233, 'Joško Gvardiol', 'Croatia');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (234, 'Mislav Oršić', 'Croatia');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (235, 'Achraf Dari', 'Morocco');
+
+-- Final
+
 
 
 
