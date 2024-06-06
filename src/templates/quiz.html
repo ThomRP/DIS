@@ -1,0 +1,13 @@
+{% extends "navbar.html" %}
+{% block content %}
+<h1>Answer the following: {{question}}!</h1>
+<div class="contact">
+  <div class="querybox">
+    <form method="POST">
+      <input maxlength=20 type="string" id="form" name="answer" placeholder="Answer" \ />
+      <input type="submit" name="answer" id="button" value="Go" />
+    </form>
+  </div>
+
+</div>
+{% endblock content %}

@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, url_for, session, abort, request, flash
 import requests
+import re
 from bs4 import BeautifulSoup
 import psycopg2
 from flask_bcrypt import Bcrypt
@@ -33,6 +34,28 @@ def home():
 @app.route("/contact",methods=["POST", "GET"])
 def contact():
     return render_template("contact.html")
+
+@app.route("/quiz",methods=["POST", "GET"])
+def quiz():
+    qa = random.randint(0,3)
+    questions = ['Who won the wc in Qatar?', 'Who won the wc in Russia?',
+                  'Who is the top scorer of England in the past two WCs?',
+                  'In Russia who was the country with the most wins other than France?',
+                    'How many wins did Denmark get in the Russia WC?']
+    answers = ['Argentina', 'France','Kane', 'Croatia', '1']
+    correct = request.form.get("correct","").lower()
+    if request.method == "POST":
+            answer = request.form.get("answer","").lower()
+            if answer:
+                x = re.search(correct,answer)
+                if x:
+                    print("CORRECT")
+                else:
+                    print("FALSE")
+                qa = random.randint(0,3)
+                return render_template("quiz.html", question=questions[qa], correct = answers[qa])
+
+    return render_template("quiz.html", question=questions[qa], answer = answers[qa])
 
 @app.route("/team/<teamname>", methods=["POST", "GET"])
 def teampage(teamname):
