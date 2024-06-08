@@ -134,7 +134,7 @@ INSERT INTO public.Players (player_id, player_name, team_name) VALUES (3, 'Dzyub
 INSERT INTO public.Players (player_id, player_name, team_name) VALUES (4, 'Golovin', 'Russia');
 INSERT INTO public.Players (player_id, player_name, team_name) VALUES (5, 'Giménez', 'Uruguay');
 INSERT INTO public.Players (player_id, player_name, team_name) VALUES (6, 'Suárez', 'Uruguay');
-INSERT INTO public.Players (player_id, player_name, team_name) VALUES (88, 'Fathi', 'Uruguay');
+INSERT INTO public.Players (player_id, player_name, team_name) VALUES (88, 'Fathi', 'Egypt');
 INSERT INTO public.Players (player_id, player_name, team_name) VALUES (7, 'Salah', 'Egypt');
 INSERT INTO public.Players (player_id, player_name, team_name) VALUES (8, 'Cavani', 'Uruguay');
 INSERT INTO public.Players (player_id, player_name, team_name) VALUES (9, 'Salman Al-Faraj', 'Saudi Arabia');
@@ -716,7 +716,7 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (29, 'Spartak Stadium', 'Belgium','false',3,1,NULL,NULL,5,2,'Belgium',2, 7);
-INSERT INTO public.plays VALUES(4, 'Belgium', 'Tunisia');
+INSERT INTO public.plays VALUES(29, 'Belgium', 'Tunisia');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
     (65,true, false, 6, NULL, 65, 29);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
@@ -987,6 +987,7 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (51, 'Luzhniki Stadium', 'Spain','true',1,1,1,1,1,1,'Russia',4, NULL);
+INSERT INTO public.plays VALUES(51, 'Spain', 'Russia');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
     (133,false, true, 12, NULL, 99, 51);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
@@ -1526,7 +1527,7 @@ INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pa
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
     (98,'Al Bayt Stadium', 'Netherlands', false, 1, 0, NULL, NULL, 2, 0,'Qatar', 11,9);
-INSERT INTO public.plays VALUES(98,'Ecuador', 'Senegal');
+INSERT INTO public.plays VALUES(98,'Netherlands', 'Qatar');
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
     (254,false, false, 26,NULL, 124, 98);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
