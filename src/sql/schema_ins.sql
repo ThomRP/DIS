@@ -993,7 +993,6 @@ INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id)
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
     (134,false, true, 41, NULL, 3, 51);
 
-INSERT INTO public.plays VALUES(51, 'Spain', 'Russia');
 INSERT INTO public.Matches(match_id,stadium,hometeam_name,knockout,home_score_pause,
     away_score_pause,home_score_et,away_score_et,
     home_score,away_score,winner_name,round_id,group_id) VALUES 
