@@ -1,38 +1,38 @@
 {% extends "navbar.html" %} {% block content %}
 <h1>World Cup database!</h1>
-
-<img src="/static/messi.jpg" alt="WC" class="image">
-<form action="" method="post" class="queryform">
-    <!-- <div class="querybox">
+<div class="card3">
+    <img src="/static/messi.jpg" alt="WC" class="image2">
+    <form action="" method="post" class="queryform">
+        <!-- <div class="querybox">
         <input maxlength=4 type="number" id="form" name="punkid" placeholder="Punk ID" \ />
         <input type="submit" name="punkid" id="button" value="Go" />
 
     </div> -->
-    <div class="querybox">
-        <label class="radio">Russia
-            <input type="radio" checked="checked" name="radio" id="1" value="1" />
-        </label>
-        <label class="radio">Qatar
-            <input type="radio" name="radio" id="2" value="2" />
-        </label>
-        <label class="radio">Both
-            <input type="radio" name="radio" id="all" value="all" />
-        </label>
-    </div>
-    <div class="querybox">
-        <label class="radio">Trophies
-            <input type="radio" checked="checked" name="radiosearch" id="trophies" value="trophies" />
-        </label>
-        <label class="radio">Wins
-            <input type="radio" name="radiosearch" id="wins" value="wins" />
-        </label>
-        <label class="radio">Games played
-            <input type="radio" name="radiosearch" id="played" value="played" />
-        </label>
-    </div>
-    <div class="querybox">
-        <input type="submit" id="button" value="Search" />
-    </div>
-</form>
-
+        <div class="querybox">
+            <label class="radio">Russia
+                <input type="radio" checked="checked" name="radio" id="1" value="1" />
+            </label>
+            <label class="radio">Qatar
+                <input type="radio" name="radio" id="2" value="2" />
+            </label>
+            <label class="radio">Both
+                <input type="radio" name="radio" id="all" value="all" />
+            </label>
+        </div>
+        <div class="querybox">
+            <label class="radio">Trophies
+                <input type="radio" checked="checked" name="radiosearch" id="trophies" value="trophies" />
+            </label>
+            <label class="radio">Wins
+                <input type="radio" name="radiosearch" id="wins" value="wins" />
+            </label>
+            <label class="radio">Games played
+                <input type="radio" name="radiosearch" id="played" value="played" />
+            </label>
+        </div>
+        <div class="querybox">
+            <input type="submit" id="button" value="Search" />
+        </div>
+    </form>
+</div>
 {% endblock content %}

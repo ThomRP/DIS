@@ -1,13 +1,25 @@
 {% extends "navbar.html" %}
 {% block content %}
 <h1>Answer the following: {{question}}!</h1>
-<div class="contact">
+<div class="card4">
+  <img src="/static/wc.jpg" alt="WC" class="image3">
+</div>
+<div class="answer">
   <div class="querybox">
     <form method="POST">
       <input maxlength=20 type="string" id="form" name="answer" placeholder="Answer" \ />
       <input type="submit" name="answer" id="button" value="Go" />
     </form>
+
+
   </div>
+  {% if correct != NULL %}
+  {% if correct %}
+  <h1>Correct!</h1>
+  {% else %}
+  <h1>Incorrect! Try again.</h1>
+  {% endif %}
+  {% endif %}
 
 </div>
 {% endblock content %}
