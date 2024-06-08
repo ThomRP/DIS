@@ -1,20 +1,3 @@
---
--- schema_ins.sql
--- Populate football schema with data.
---
---
--- Dependency level 2
--- Referential integrity to level 1 and 0
---
-
---
--- Dependency level 1
--- Referential integrity to level 0
---
---
--- Dependency level 0. 
--- No referential integrity constraints
---
 DELETE FROM plays;
 DELETE FROM consists_of;
 
