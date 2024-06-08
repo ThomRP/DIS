@@ -2042,3 +2042,4 @@ INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id)
     (340,false, false, 81,NULL, 26, 128);
 INSERT INTO public.Goals(goal_id,penalty,owngoal,minut,offse,player_id,match_id) VALUES 
     (341,true, false, 118,NULL, 26, 128);
+ 
