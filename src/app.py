@@ -8,7 +8,7 @@ import os
 app = Flask(__name__ , static_url_path='/static')
 
 # set your own database name, username and password
-db = "dbname='postgres' user='postgres' host='localhost' password='0909'" #potentially wrong password
+db = "dbname='XXXX' user='XXXX' host='localhost' password='XXXX'" #potentially wrong password
 conn = psycopg2.connect(db)
 cursor = conn.cursor()
 
