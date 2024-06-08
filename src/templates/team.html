@@ -1,13 +1,14 @@
 {% extends "navbar.html" %} {% block content %}
 <h1>Topscorers of {{team}}!</h1>
-<div class="cards">
+<div class="cards2">
 
     {%for i in range(0,length)%}
-    <div class="card">
+    <div class="card2">
         <div class=" container">
             <h4><b>{{content[i][0]}}</b></h4>
             <p class="card-text">Goals: {{content[i][1]}}</p>
         </div>
+        <img src="/static/flags/{{team}}.png" alt="flag" class="image">
     </div>
     {%endfor%}
 </div>

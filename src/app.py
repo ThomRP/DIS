@@ -1,14 +1,9 @@
-from flask import Flask, render_template, redirect, url_for, session, abort, request, flash
-import requests
+from flask import Flask, render_template, redirect, url_for, session, request
 import re
-from bs4 import BeautifulSoup
 import psycopg2
 from flask_bcrypt import Bcrypt
-from flask_login import LoginManager
 import os
-import glob
-import pandas as pd
-import random
+
 
 app = Flask(__name__ , static_url_path='/static')
 
@@ -35,25 +30,31 @@ def home():
 def contact():
     return render_template("contact.html")
 
-@app.route("/quiz",methods=["POST", "GET"])
+@app.route("/quiz/",methods=["POST", "GET"])
 def quiz():
-    qa = random.randint(0,3)
     questions = ['Who won the wc in Qatar?', 'Who won the wc in Russia?',
                   'Who is the top scorer of England in the past two WCs?',
                   'In Russia who was the country with the most wins other than France?',
                     'How many wins did Denmark get in the Russia WC?']
     answers = ['Argentina', 'France','Kane', 'Croatia', '1']
-    correct = request.form.get("correct","").lower()
+    if ('qa' not in session):
+        session['qa'] = 0
+    qa = session['qa']
     if request.method == "POST":
             answer = request.form.get("answer","").lower()
             if answer:
-                x = re.search(correct,answer)
+                #"^" and "$" ensures that it is exactly what we want - that is nothing more and nothing less
+                x = re.search( "^" + answers[qa].lower() + "$",answer) 
+                correct = False
                 if x:
-                    print("CORRECT")
-                else:
-                    print("FALSE")
-                qa = random.randint(0,3)
-                return render_template("quiz.html", question=questions[qa], correct = answers[qa])
+                    if((session['qa'] != len(answers)-1)):
+                        session['qa'] = qa + 1
+                    else:
+                        session['qa'] = 0
+                    qa = session['qa']
+                    correct = True
+                return render_template("quiz.html", question=questions[qa], answer = answers[qa],correct = correct)
+ 
 
     return render_template("quiz.html", question=questions[qa], answer = answers[qa])
 
@@ -79,64 +80,52 @@ def cupquerypage(cup_id,search):
 
     # Flest sejre
     if search == "wins":
-        sqlcode = f''' Select winner_name, count(*) as wins,cup_id
-                    from
-                    (Select winner_name, cup_id
-                    from Worldcups NATURAL JOIN consists_of
-                    NATURAL JOIN matches
-                    NATURAL JOIN plays
-                    where winner_name is not null)'''
+        sqlcode = f''' Select winner_name, sum(wins) as wins
+                        from view_wins
+                        group by winner_name
+                        order by wins desc;'''
         if cup_id != "all":
-            sqlcode += f'''
-                    where cup_id = {cup_id}
-                    '''
-        sqlcode += f'''
-                    group by winner_name, cup_id
-                    order by wins desc;'''
+            sqlcode = f''' Select winner_name, sum(wins) as wins,cup_id
+                            from view_wins
+                            where cup_id = {cup_id}
+                            group by winner_name, cup_id
+                            order by wins desc;'''
         rest += 1
         print(sqlcode)
     # Flest spillede
     if search == "played":
-        sqlcode += f'''
-                    SELECT team_name, count(*) as played, cup_id from
-                    ((Select cup_id, team_name1 as team_name
-                    from plays 
-                    NATURAL JOIN Matches 
-                    NATURAL JOIN consists_of )
-                    UNION ALL
-                    (Select cup_id, team_name2 as team_name
-                    from plays 
-                    NATURAL JOIN Matches 
-                    NATURAL JOIN consists_of ))
-                    '''
+        sqlcode = f'''
+                    SELECT team_name, count(*) as played
+                    from view_played
+                    Group By team_name
+                    order by played desc;'''
         if cup_id != "all":
-            sqlcode += f'''
+            sqlcode = f'''
+                    SELECT team_name, count(*) as played, cup_id
+                    from view_played
                     where cup_id = {cup_id}
-'''
-        sqlcode += f'''
                     Group By team_name, cup_id
                     order by played desc;'''
+
         rest += 1
         search = "Games Played"
 
     #  Flest trofæer:
     if rest == 0: 
         sqlcode = f'''
-                Select winner_name, cup_id, count(*) as wins
-                from
-                (Select winner_name, cup_id
-                from Worldcups NATURAL JOIN consists_of
-                NATURAL JOIN 
-                (SELECT * from matches NATURAL JOIN Rounds Where round_name = 'Final' )
-                NATURAL JOIN plays
-                where winner_name is not null)'''
-        if cup_id != "all":
-                sqlcode += f'''
-                    where cup_id = {cup_id}
+                    Select winner_name, sum(wins) as wins
+                    from view_trophies
+                    group by winner_name
+                    order by wins desc;
                     '''
-        sqlcode += f'''
-                    group by winner_name, cup_id
-                    order by wins desc;'''
+        if cup_id != "all":
+                sqlcode = f'''
+                    Select winner_name, sum(wins) as wins,cup_id
+                            from view_trophies
+                            where cup_id = {cup_id}
+                            group by winner_name, cup_id
+                            order by wins desc;
+                    '''
 
     cur.execute(sqlcode)
     ct = list(cur.fetchall())

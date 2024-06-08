@@ -1,5 +1,3 @@
-\i schema_drop.sql
-
 --ENTITIES
 CREATE TABLE IF NOT EXISTS WorldCups(
 	cup_id integer PRIMARY KEY,
